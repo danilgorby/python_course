@@ -6,7 +6,7 @@ from networkx.drawing.nx_pydot import graphviz_layout
 
 
 if __name__ == "__main__":
-    with open('fun.py', "r") as f:
+    with open('funcs.py', "r") as f:
         source = f.read()
     root = ast.parse(source).body[0]
 
