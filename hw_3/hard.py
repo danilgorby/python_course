@@ -47,7 +47,6 @@ class HashMixinsMatrix(StrMixin, SaveMixin, HashMixin):
                 self.values[i][j] = value[i][j]
         self.n = len(self.values)
         self.m = len(self.values[0])
-        # self.__hash__ == HashMixin.__hash__
         self.matmul_cache = matmul_cache
 
     def __getitem__(self, ij):
